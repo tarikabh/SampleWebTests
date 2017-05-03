@@ -34,26 +34,4 @@ public class DriverSupport {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         return driver;
     }
-
-//    public static File takeScreenshot() throws IOException {
-//        File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//        File dst = new File("/Users/Tarik/Desktop/new-screenshot.png");
-//        FileUtils.copyFile(src, dst);
-//
-//        return dst;
-//    }
-//
-//    public static void generatePdiff(File refImg, File newImg) throws InterruptedException, IOException, IM4JavaException {
-//        CompareCmd compare = new CompareCmd();
-//
-//        IMOperation imOperation = new IMOperation();
-//
-//        imOperation.metric("mae");
-//
-//        imOperation.addImage(refImg.getAbsolutePath());
-//        imOperation.addImage(newImg.getAbsolutePath());
-//        imOperation.addImage("/Users/Tarik/Desktop/diff.png");
-//
-//        compare.run(imOperation);
-//    }
 }
